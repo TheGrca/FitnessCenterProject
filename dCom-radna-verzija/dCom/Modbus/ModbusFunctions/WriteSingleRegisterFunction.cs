@@ -24,15 +24,56 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override byte[] PackRequest()
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            byte[] ret = new byte[12];
+
+            ModbusWriteCommandParameters modbus = (ModbusWriteCommandParameters)CommandParameters;
+
+            byte[] trans = BitConverter.GetBytes(modbus.TransactionId);
+            ret[0] = trans[1];
+            ret[1] = trans[0];
+
+            byte[] protocol = BitConverter.GetBytes(modbus.ProtocolId);
+            ret[2] = protocol[1];
+            ret[3] = protocol[0];
+
+            byte[] length = BitConverter.GetBytes(modbus.Length);
+            ret[4] = length[1];
+            ret[5] = length[0];
+            ret[6] = (byte)(modbus.UnitId);
+            ret[7] = (byte)(modbus.FunctionCode);
+
+            byte[] output_address = BitConverter.GetBytes(modbus.OutputAddress);
+            ret[8] = output_address[1];
+            ret[9] = output_address[0];
+
+            byte[] value = BitConverter.GetBytes(modbus.Value);
+            ret[10] = value[1];
+            ret[11] = value[0];
+
+            return ret;
         }
 
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            Dictionary<Tuple<PointType, ushort>, ushort> ret = new Dictionary<Tuple<PointType, ushort>, ushort>();
+            ModbusWriteCommandParameters modbus = (ModbusWriteCommandParameters)CommandParameters;
+
+            if(response.Length <= 9)
+            {
+                Console.WriteLine("Message not valid");
+            }
+            else
+            {
+                Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_OUTPUT, modbus.OutputAddress);
+                byte[] bytes = new byte[2];
+
+                bytes[0] = response[10];
+                bytes[1] = response[11];
+                ret.Add(tuple, (ushort)BitConverter.ToUInt16(bytes, 0));
+            }
+
+            return ret;
         }
     }
 }

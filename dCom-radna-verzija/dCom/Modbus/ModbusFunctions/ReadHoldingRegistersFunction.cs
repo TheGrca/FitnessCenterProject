@@ -31,18 +31,18 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)
         {
-            ModbusCommandParameters modbus = (ModbusCommandParameters)CommandParameters;
+            ModbusReadCommandParameters modbus = (ModbusReadCommandParameters)CommandParameters;
             Dictionary<Tuple<PointType, ushort>, ushort> ret = new Dictionary<Tuple<PointType, ushort>, ushort>();
 
             if(response.Length < 9)
             {
-                Console.WriteLine("Poruka nije validna");
+                Console.WriteLine("Message not valid");
             }
             else
             {
-                for(int i = 0; i < response[9]; i += 2)
+                for(int i = 0; i < response[8]; i += 2)
                 {
-                    Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_OUTPUT); /////);
+                    Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_OUTPUT, modbus.StartAddress);
                     byte[] bytes = new byte[2];
                     bytes[0] = response[10 + i];
                     bytes[1] = response[9 + i];
