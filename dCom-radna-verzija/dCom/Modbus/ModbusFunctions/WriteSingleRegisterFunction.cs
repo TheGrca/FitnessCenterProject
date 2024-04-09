@@ -32,14 +32,16 @@ namespace Modbus.ModbusFunctions
             ret[0] = trans[1];
             ret[1] = trans[0];
 
-            byte[] protocol = BitConverter.GetBytes(modbus.ProtocolId);
-            ret[2] = protocol[1];
-            ret[3] = protocol[0];
+            byte[] protc = BitConverter.GetBytes(modbus.ProtocolId);
+            ret[2] = protc[1];
+            ret[3] = protc[0];
 
             byte[] length = BitConverter.GetBytes(modbus.Length);
             ret[4] = length[1];
             ret[5] = length[0];
+
             ret[6] = (byte)(modbus.UnitId);
+
             ret[7] = (byte)(modbus.FunctionCode);
 
             byte[] output_address = BitConverter.GetBytes(modbus.OutputAddress);
@@ -59,18 +61,21 @@ namespace Modbus.ModbusFunctions
             Dictionary<Tuple<PointType, ushort>, ushort> ret = new Dictionary<Tuple<PointType, ushort>, ushort>();
             ModbusWriteCommandParameters modbus = (ModbusWriteCommandParameters)CommandParameters;
 
-            if(response.Length <= 9)
+            if (response.Length <= 9)
             {
-                Console.WriteLine("Message not valid");
+                Console.WriteLine("Not valid message!");
             }
             else
             {
-                Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_OUTPUT, modbus.OutputAddress);
-                byte[] bytes = new byte[2];
+                for (int i = 0; i < response[8]; i += 2)
+                {
+                    Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_OUTPUT, modbus.OutputAddress);
+                    byte[] bytes = new byte[2];
 
-                bytes[0] = response[10];
-                bytes[1] = response[11];
-                ret.Add(tuple, (ushort)BitConverter.ToUInt16(bytes, 0));
+                    bytes[0] = response[10];
+                    bytes[1] = response[9];
+                    ret.Add(tuple, (ushort)BitConverter.ToUInt16(bytes, 0));
+                }
             }
 
             return ret;

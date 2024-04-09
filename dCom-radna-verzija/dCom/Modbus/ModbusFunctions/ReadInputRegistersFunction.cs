@@ -24,50 +24,58 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override byte[] PackRequest()
         {
-            Console.WriteLine("Request started");
-            byte[] recVal = new byte[12];
-            ModbusReadCommandParameters  modbus = (ModbusReadCommandParameters)CommandParameters;
-            byte[] temp = BitConverter.GetBytes(modbus.TransactionId);
-            recVal[0] = temp[0];
-            recVal[1] = temp[1];
+            byte[] ret = new byte[12];
 
-            byte[] tempP = BitConverter.GetBytes(modbus.ProtocolId);
-            recVal[2] = tempP[0];
-            recVal[3] = tempP[1];
+            ModbusReadCommandParameters modbus = (ModbusReadCommandParameters)CommandParameters;
 
-            byte[] tempL = BitConverter.GetBytes(modbus.Length);
-            recVal[4] = tempL[0];
-            recVal[5] = tempL[1];
-            recVal[6] = (byte)(modbus.UnitId);
-            recVal[7] = (byte)(modbus.FunctionCode);
+            byte[] trans = BitConverter.GetBytes(modbus.TransactionId);
+            ret[0] = trans[1];
+            ret[1] = trans[0];
 
-            byte[] tempSA = BitConverter.GetBytes(modbus.StartAddress);
-            recVal[8] = tempSA[0];
-            recVal[9] = tempSA[1];
+            byte[] protc = BitConverter.GetBytes(modbus.ProtocolId);
+            ret[2] = protc[1];
+            ret[3] = protc[0];
 
-            byte[] tempQ = BitConverter.GetBytes(modbus.Quantity);
-            recVal[10] = tempQ[0];
-            recVal[11] = tempQ[1];
+            byte[] length = BitConverter.GetBytes(modbus.Length);
+            ret[4] = length[1];
+            ret[5] = length[0];
 
-            Console.WriteLine("Request ended");
-            return recVal;
+            ret[6] = (byte)(modbus.UnitId);
+
+            ret[7] = (byte)(modbus.FunctionCode);
+
+            byte[] start_address = BitConverter.GetBytes(modbus.StartAddress);
+            ret[8] = start_address[1];
+            ret[9] = start_address[0];
+
+            byte[] quantity = BitConverter.GetBytes(modbus.Quantity);
+            ret[10] = quantity[1];
+            ret[11] = quantity[0];
+
+            return ret;
         }
 
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)
         {
-            ModbusReadCommandParameters modbus = (ModbusReadCommandParameters)CommandParameters;
             Dictionary<Tuple<PointType, ushort>, ushort> ret = new Dictionary<Tuple<PointType, ushort>, ushort>();
+            ModbusReadCommandParameters modbus = (ModbusReadCommandParameters)CommandParameters;
 
-            for(int i = 0; i < response[8]; i += 2)
+            if (response.Length <= 9)
             {
-                Tuple<PointType, ushort> tuple = Tuple.Create((PointType)response[7], modbus.StartAddress);
-                byte[] bytes = BitConverter.GetBytes(response[9 + i]);
-                byte temp1 = bytes[0];
-                byte temp2 = bytes[1];
-                bytes[0] = temp2;
-                bytes[1] = temp1;
-                ret.Add(tuple, (ushort)BitConverter.ToInt16(bytes, 0));
+                Console.WriteLine("Not valid message!");
+            }
+            else
+            {
+                for (int i = 0; i < response[8]; i+=2)
+                {
+                    Tuple<PointType, ushort> tuple = Tuple.Create(PointType.ANALOG_INPUT, modbus.StartAddress);
+                    byte[] bytes = new byte[2];
+
+                    bytes[0] = response[10 + i];
+                    bytes[1] = response[9 + i];
+                    ret.Add(tuple, (ushort)BitConverter.ToUInt16(bytes, 0));
+                }
             }
 
             return ret;
