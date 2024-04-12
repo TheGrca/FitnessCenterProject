@@ -25,32 +25,31 @@ namespace Modbus.ModbusFunctions
         public override byte[] PackRequest()
         {
             byte[] ret = new byte[12];
-
             ModbusWriteCommandParameters modbus = (ModbusWriteCommandParameters)CommandParameters;
 
-            byte[] trans = BitConverter.GetBytes(modbus.TransactionId);
-            ret[0] = trans[1];
-            ret[1] = trans[0];
+            byte[] TransactionId = BitConverter.GetBytes(modbus.TransactionId);
+            ret[0] = TransactionId[1];
+            ret[1] = TransactionId[0];
 
-            byte[] protc = BitConverter.GetBytes(modbus.ProtocolId);
-            ret[2] = protc[1];
-            ret[3] = protc[0];
+            byte[] ProtocolId = BitConverter.GetBytes(modbus.ProtocolId);
+            ret[2] = ProtocolId[1];
+            ret[3] = ProtocolId[0];
 
-            byte[] length = BitConverter.GetBytes(modbus.Length);
-            ret[4] = length[1];
-            ret[5] = length[0];
+            byte[] Length = BitConverter.GetBytes(modbus.Length);
+            ret[4] = Length[1];
+            ret[5] = Length[0];
 
             ret[6] = (byte)(modbus.UnitId);
 
             ret[7] = (byte)(modbus.FunctionCode);
 
-            byte[] output_address = BitConverter.GetBytes(modbus.OutputAddress);
-            ret[8] = output_address[1];
-            ret[9] = output_address[0];
+            byte[] OutputAddress = BitConverter.GetBytes(modbus.OutputAddress);
+            ret[8] = OutputAddress[1];
+            ret[9] = OutputAddress[0];
 
-            byte[] value = BitConverter.GetBytes(modbus.Value);
-            ret[10] = value[1];
-            ret[11] = value[0];
+            byte[] Value = BitConverter.GetBytes(modbus.Value);
+            ret[10] = Value[1];
+            ret[11] = Value[0];
 
             return ret;
         }

@@ -15,3 +15,9 @@ C:\Users\sef_s\Desktop\Akviziciono upravljacki sistemi\dCom-radna-verzija\dCom\C
 C:\Users\sef_s\Desktop\Akviziciono upravljacki sistemi\dCom-radna-verzija\dCom\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\sef_s\Desktop\Akviziciono upravljacki sistemi\dCom-radna-verzija\dCom\Common\obj\Debug\Common.dll
 C:\Users\sef_s\Desktop\Akviziciono upravljacki sistemi\dCom-radna-verzija\dCom\Common\obj\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\obj\Debug\Common.dll
+C:\Users\Korisnik\Desktop\FitnessCenterProject-main\dCom-radna-verzija\dCom\Common\obj\Debug\Common.pdb

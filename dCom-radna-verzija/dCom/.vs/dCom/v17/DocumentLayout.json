@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|c:\\users\\korisnik\\desktop\\fitnesscenterproject\\dcom-radna-verzija\\dcom\\modbus\\modbusfunctions\\writesingleregisterfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\writesingleregisterfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\modbusfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\modbusfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\readcoilsfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\readcoilsfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\readdiscreteinputsfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\readdiscreteinputsfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\readholdingregistersfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\readholdingregistersfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\readinputregistersfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\readinputregistersfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\modbusfunctions\\writesinglecoilfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\modbusfunctions\\writesinglecoilfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\functionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\functionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5697AB8-53AC-4230-9B79-E43A6AA54436}|dCom\\dCom.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\dcom\\rtucfg.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5697AB8-53AC-4230-9B79-E43A6AA54436}|dCom\\dCom.csproj|solutionrelative:dcom\\rtucfg.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\processingmodule\\automationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|solutionrelative:processingmodule\\automationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\connection\\tcpconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\connection\\tcpconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\connection\\iconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\connection\\iconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\connection\\functionexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\connection\\functionexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\modbus\\functionparameters\\modbuscommandparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B26E48-3A6C-4BC4-AF16-F77809B5AFA2}|Modbus\\Modbus.csproj|solutionrelative:modbus\\functionparameters\\modbuscommandparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\processingmodule\\processingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|solutionrelative:processingmodule\\processingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\processingmodule\\eguconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|solutionrelative:processingmodule\\eguconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\processingmodule\\alarmprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|solutionrelative:processingmodule\\alarmprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\processingmodule\\acquisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A61FACB3-147E-4FD9-88C1-A3F226157C23}|ProcessingModule\\ProcessingModule.csproj|solutionrelative:processingmodule\\acquisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WriteSingleRegisterFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\WriteSingleRegisterFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\WriteSingleRegisterFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\WriteSingleRegisterFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\WriteSingleRegisterFunction.cs",
+              "ViewState": "AQIAADgAAABAMzMzMzMhwEAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:33:28.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReadInputRegistersFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadInputRegistersFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\ReadInputRegistersFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadInputRegistersFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\ReadInputRegistersFunction.cs",
+              "ViewState": "AQIAADcAAAAAZmZmZmYOwDMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReadHoldingRegistersFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadHoldingRegistersFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\ReadHoldingRegistersFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadHoldingRegistersFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\ReadHoldingRegistersFunction.cs",
+              "ViewState": "AQIAADcAAAAAZmZmZmYOwDMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:36:00.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReadDiscreteInputsFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadDiscreteInputsFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\ReadDiscreteInputsFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadDiscreteInputsFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\ReadDiscreteInputsFunction.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwDMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:37:03.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReadCoilsFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadCoilsFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\ReadCoilsFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ReadCoilsFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\ReadCoilsFunction.cs",
+              "ViewState": "AQIAAEUAAACgZmZmZmYiwDMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:37:46.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModbusFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ModbusFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\ModbusFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\ModbusFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\ModbusFunction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WriteSingleCoilFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\WriteSingleCoilFunction.cs",
+              "RelativeDocumentMoniker": "Modbus\\ModbusFunctions\\WriteSingleCoilFunction.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\ModbusFunctions\\WriteSingleCoilFunction.cs",
+              "RelativeToolTip": "Modbus\\ModbusFunctions\\WriteSingleCoilFunction.cs",
+              "ViewState": "AQIAAD4AAAAAMjMzMzMLwDMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:34:21.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FunctionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\FunctionFactory.cs",
+              "RelativeDocumentMoniker": "Modbus\\FunctionFactory.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\FunctionFactory.cs",
+              "RelativeToolTip": "Modbus\\FunctionFactory.cs",
+              "ViewState": "AQIAAAwAAACAmZmZmZkdwA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RtuCfg.txt",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\dCom\\RtuCfg.txt",
+              "RelativeDocumentMoniker": "dCom\\RtuCfg.txt",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\dCom\\RtuCfg.txt",
+              "RelativeToolTip": "dCom\\RtuCfg.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-12T11:31:05.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutomationManager.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\AutomationManager.cs",
+              "RelativeDocumentMoniker": "ProcessingModule\\AutomationManager.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\AutomationManager.cs",
+              "RelativeToolTip": "ProcessingModule\\AutomationManager.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAmwF4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProcessingManager.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\ProcessingManager.cs",
+              "RelativeDocumentMoniker": "ProcessingModule\\ProcessingManager.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\ProcessingManager.cs",
+              "RelativeToolTip": "ProcessingModule\\ProcessingManager.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EGUConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\EGUConverter.cs",
+              "RelativeDocumentMoniker": "ProcessingModule\\EGUConverter.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\EGUConverter.cs",
+              "RelativeToolTip": "ProcessingModule\\EGUConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AlarmProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\AlarmProcessor.cs",
+              "RelativeDocumentMoniker": "ProcessingModule\\AlarmProcessor.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\AlarmProcessor.cs",
+              "RelativeToolTip": "ProcessingModule\\AlarmProcessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Acquisitor.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\Acquisitor.cs",
+              "RelativeDocumentMoniker": "ProcessingModule\\Acquisitor.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\ProcessingModule\\Acquisitor.cs",
+              "RelativeToolTip": "ProcessingModule\\Acquisitor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TCPConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\TCPConnection.cs",
+              "RelativeDocumentMoniker": "Modbus\\Connection\\TCPConnection.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\TCPConnection.cs",
+              "RelativeToolTip": "Modbus\\Connection\\TCPConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\IConnection.cs",
+              "RelativeDocumentMoniker": "Modbus\\Connection\\IConnection.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\IConnection.cs",
+              "RelativeToolTip": "Modbus\\Connection\\IConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FunctionExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\FunctionExecutor.cs",
+              "RelativeDocumentMoniker": "Modbus\\Connection\\FunctionExecutor.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\Connection\\FunctionExecutor.cs",
+              "RelativeToolTip": "Modbus\\Connection\\FunctionExecutor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModbusCommandParameters.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\FunctionParameters\\ModbusCommandParameters.cs",
+              "RelativeDocumentMoniker": "Modbus\\FunctionParameters\\ModbusCommandParameters.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\FitnessCenterProject\\dCom-radna-verzija\\dCom\\Modbus\\FunctionParameters\\ModbusCommandParameters.cs",
+              "RelativeToolTip": "Modbus\\FunctionParameters\\ModbusCommandParameters.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:31:05.312Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

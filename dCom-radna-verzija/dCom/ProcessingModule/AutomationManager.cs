@@ -1,5 +1,6 @@
 ﻿using Common;
 using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace ProcessingModule
@@ -9,7 +10,8 @@ namespace ProcessingModule
     /// </summary>
     public class AutomationManager : IAutomationManager, IDisposable
 	{
-		private Thread automationWorker;
+		private Thread automationWorkerDigital; //Thread za citanje digitalnih ulaza/izlaza
+		private Thread automationWorkerAnalog; //Thread za citanje analognih ulaza/izlaza
         private AutoResetEvent automationTrigger;
         private IStorage storage;
 		private IProcessingManager processingManager;
@@ -45,8 +47,11 @@ namespace ProcessingModule
         /// </summary>
 		private void InitializeAutomationWorkerThread()
 		{
-			automationWorker = new Thread(AutomationWorker_DoWork);
-			automationWorker.Name = "Aumation Thread";
+			automationWorkerDigital = new Thread(AutomationWorker_Digital);
+			automationWorkerDigital.Name = "Automation Digital Thread";
+			
+			automationWorkerAnalog = new Thread(AutomationWorker_Analog);
+			automationWorkerAnalog.Name = "Automation Analog Thread";
 		}
 
         /// <summary>
@@ -54,16 +59,50 @@ namespace ProcessingModule
         /// </summary>
 		private void StartAutomationWorkerThread()
 		{
-			automationWorker.Start();
+			automationWorkerDigital.Start();
+			automationWorkerAnalog.Start();
 		}
 
 
-		private void AutomationWorker_DoWork()
+		//Citanje digitalnih izlaza
+		private void AutomationWorker_Digital()
 		{
-			//while (!disposedValue)
-			//{
-			//}
-		}
+			PointIdentifier TM1 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 4000);
+            PointIdentifier TM2 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 4001);
+            PointIdentifier WM1 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 4002);
+            PointIdentifier WM2 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 4003);
+            List<PointIdentifier> list = new List<PointIdentifier> { TM1, TM2, WM1, WM2 };
+			while (!disposedValue)
+			{
+				List<IPoint> points = storage.GetPoints(list);
+
+				Thread.Sleep(2000);
+				processingManager.ExecuteReadCommand(points[0].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[0].ConfigItem.StartAddress, 1);
+				processingManager.ExecuteReadCommand(points[1].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[1].ConfigItem.StartAddress, 1);
+				processingManager.ExecuteReadCommand(points[2].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[2].ConfigItem.StartAddress, 1);
+				processingManager.ExecuteReadCommand(points[3].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[3].ConfigItem.StartAddress, 1);
+			}
+        }
+
+		//Citanje analognih ulaza
+		private void AutomationWorker_Analog()
+		{
+            PointIdentifier SC = new PointIdentifier(PointType.ANALOG_INPUT, 3300);
+            PointIdentifier LC = new PointIdentifier(PointType.ANALOG_INPUT, 3301);
+            PointIdentifier HRM1 = new PointIdentifier(PointType.ANALOG_INPUT, 3302);
+            PointIdentifier HRM2 = new PointIdentifier(PointType.ANALOG_INPUT, 3303);
+            List<PointIdentifier> list = new List<PointIdentifier> { SC, LC, HRM1, HRM2 };
+            while (!disposedValue)
+            {
+                List<IPoint> points = storage.GetPoints(list);
+
+                Thread.Sleep(4000);
+                processingManager.ExecuteReadCommand(points[0].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[0].ConfigItem.StartAddress, 1);
+                processingManager.ExecuteReadCommand(points[1].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[1].ConfigItem.StartAddress, 1);
+                processingManager.ExecuteReadCommand(points[2].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[2].ConfigItem.StartAddress, 1);
+				processingManager.ExecuteReadCommand(points[3].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[3].ConfigItem.StartAddress, 1);
+            }
+        }
 
 		#region IDisposable Support
 		private bool disposedValue = false; // To detect redundant calls
